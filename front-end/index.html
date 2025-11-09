@@ -1,71 +1,44 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sistema Automotivo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Veículos - Concessionária</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"iantegrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+  <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container header-content">
-      <img src="img-project/Logo-motors.png" alt="">
-      
-      <a class="btn big primary" href="cadastro.html">Cadastrar novo veículo</a>
+  <header>
+    <div class="header-container">
+      <img src="img-project/Logo-motors.png" alt="Logo da Concessionária" class="logo">
+      <h1 id="title-header">Gestor de Veículos</h1>
     </div>
   </header>
 
-  <main class="container">
-    <section class="search-bar">
-      <input id="searchInput" type="search" placeholder="Buscar por marca ou modelo" />
-      <button id="btnSearch" class="btn">Buscar</button>
-      <button id="btnClear" class="btn ghost">Limpar</button>
+  <main>
+    <div class="actions">
+      <a href="cadastro.html" class="btn-add">➕ Novo Veículo</a>
+    </div>
+
+    <section class="table-section">
+      <table id="tabela-veiculos">
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Km</th>
+            <th>Preço</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </section>
-
-   <section class="table-wrap">
-  <table id="veiculosTable" class="table">
-    <thead>
-      <tr>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Ano</th>
-        <th>Cor</th>
-        <th>Preço</th>
-        <th>Quilometragem</th>
-        <th>Status</th>
-        <th>Ações</th> <!-- nova coluna -->
-      </tr>
-    </thead>
-    <tbody id="tableBody">
-      <tr>
-        <td>Fiat</td>
-        <td>Argo</td>
-        <td>2022</td>
-        <td>Prata</td>
-        <td>R$ 65.000</td>
-        <td>30.000 km</td>
-        <td>Disponível</td>
-        <td class="acoes">
-          <i class="fa-solid fa-pencil edit"></i>
-          <i class="fa-solid fa-trash delete"></i>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
- 
-
-  
   </main>
-
-  <script src="js/main.js"></script>
-  <script>
-    // inicializa listagem
-    document.addEventListener('DOMContentLoaded', () => {
-      initIndex();
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

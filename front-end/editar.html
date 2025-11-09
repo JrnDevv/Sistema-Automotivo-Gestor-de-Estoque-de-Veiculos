@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Veículo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Editar Veículo</h1>
+  </header>
+
+  <main>
+    <form id="form-veiculo">
+      <label for="marcaId">Editar Marca:</label>
+      <select id="marcaId" required></select>
+
+      <label for="modelo"> Editar Modelo:</label>
+      <input type="text" id="modelo" required>
+
+      <label for="ano">Editar Ano:</label>
+      <input type="number" id="ano" required>
+
+      <label for="cor">Editar Cor:</label>
+      <input type="text" id="cor" required>
+
+      <label for="quilometragem">Editar Quilometragem:</label>
+      <input type="number" id="quilometragem" required>
+
+      <label for="preco">Editar Preço:</label>
+      <input type="number" id="preco" required>
+            <label for="status">Status</label>
+      <select id="status" required>
+       <option value="Disponível">Disponível</option>
+       <option value="Vendido">Vendido</option>
+       <option value="Em manutenção">Em manutenção</option>
+      </select>
+
+      <button type="submit"> Salvar Alterações</button>
+
+
+
+    </form>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
